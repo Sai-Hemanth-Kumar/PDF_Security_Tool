@@ -45,6 +45,23 @@ Follow the prompts:
   3) Enter the correct password
   4) Provide a destination path, e.g. `C:\Users\you\Desktop\unlocked.pdf`
 
+#### Interactive session (sample)
+```text
+This is a PDF Locker/Unlocker Program
+
+Do you want to Lock or Unlock a PDF? (lock/unlock/exit): lock
+Enter the path of the PDF: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Unlock\Sample_Unlock.pdf
+✅ File found, proceeding...
+Enter a password to lock this PDF: ********
+Re-enter the password to confirm: ********
+🔑 Password confirmed successfully!
+Enter the path to save the PDF: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Lock\Sample_lock.pdf
+✅ PDF locked successfully and saved at: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Lock\Sample_lock.pdf
+
+Do you want to process another PDF? (y/n): n
+👋 Exiting program. Goodbye!
+```
+
 ### Project Structure
 ```
 PDF_Security_Tool/
@@ -59,6 +76,16 @@ PDF_Security_Tool/
 ### Notes
 - If you see "File already exists" when choosing a destination, you can opt to overwrite or re-enter a new path
 - For unlocking, if the password is incorrect, the tool will prompt you to try again
+- If a file is not encrypted, you will see: "This PDF is already unlocked."
+
+#### Validation and safeguards
+- ✅ Accepts only `.pdf` files (rejects folder paths and non-PDF files)
+- ✅ Prevents locking an already locked PDF → "❌ Error: This PDF is already locked."
+- ✅ Prevents unlocking an already unlocked PDF → "⚠️ This PDF is already unlocked."
+
+### Using the sample files
+- `Sample_Files/Unlock/Sample_Unlock.pdf` is an example input for locking.
+- `Sample_Files/Lock/Sample_lock.pdf` is an example output of a locked file that you can try to unlock.
 
 ### Disclaimer
 Use responsibly and only on documents you are authorized to access.
