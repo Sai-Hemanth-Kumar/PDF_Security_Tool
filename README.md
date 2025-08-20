@@ -62,17 +62,6 @@ Do you want to process another PDF? (y/n): n
 👋 Exiting program. Goodbye!
 ```
 
-### Project Structure
-```
-PDF_Security_Tool/
-├─ PDF_Security_Tool.py
-└─ Sample_Files/
-   ├─ Lock/
-   │  └─ Sample_lock.pdf
-   └─ Unlock/
-      └─ Sample_Unlock.pdf
-```
-
 ### Notes
 - If you see "File already exists" when choosing a destination, you can opt to overwrite or re-enter a new path
 - For unlocking, if the password is incorrect, the tool will prompt you to try again
@@ -89,5 +78,3 @@ PDF_Security_Tool/
 
 ### Disclaimer
 Use responsibly and only on documents you are authorized to access.
-
-
