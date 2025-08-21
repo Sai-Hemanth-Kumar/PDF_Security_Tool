@@ -35,28 +35,28 @@ Follow the prompts:
 #### Examples
 - Lock a PDF:
   1) Choose `lock`
-  2) Enter: `H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Unlock\Sample_Unlock.pdf`
+  2) Enter: `...\unlocked.pdf`
   3) Enter and confirm a password
-  4) Provide a destination path, e.g. `C:\Users\you\Desktop\locked.pdf`
+  4) Provide a destination path, e.g. `...\locked.pdf`
 
 - Unlock a PDF:
   1) Choose `unlock`
-  2) Enter: `H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Lock\Sample_lock.pdf`
+  2) Enter: `...\lock.pdf`
   3) Enter the correct password
-  4) Provide a destination path, e.g. `C:\Users\you\Desktop\unlocked.pdf`
+  4) Provide a destination path, e.g. `...\unlocked.pdf`
 
 #### Interactive session (sample)
 ```text
 This is a PDF Locker/Unlocker Program
 
 Do you want to Lock or Unlock a PDF? (lock/unlock/exit): lock
-Enter the path of the PDF: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Unlock\Sample_Unlock.pdf
+Enter the path of the PDF: ...\Sample_Unlock.pdf
 ✅ File found, proceeding...
 Enter a password to lock this PDF: ********
 Re-enter the password to confirm: ********
 🔑 Password confirmed successfully!
-Enter the path to save the PDF: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Lock\Sample_lock.pdf
-✅ PDF locked successfully and saved at: H:\GitHub_Repositories\PDF_Security_Tool\Sample_Files\Lock\Sample_lock.pdf
+Enter the path to save the PDF: ...\Sample_lock.pdf
+✅ PDF locked successfully and saved at: ...\Sample_lock.pdf
 
 Do you want to process another PDF? (y/n): n
 👋 Exiting program. Goodbye!
